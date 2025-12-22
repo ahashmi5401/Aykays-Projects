@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Product Comparison</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <h1>Product Comparison</h1>
+
+  <div class="controls">
+    <button onclick="highlightBest()">Highlight Best Price</button>
+  </div>
+
+  <div class="comparison">
+    <table id="compareTable">
+      <thead>
+        <tr>
+          <th>Features</th>
+          <th>Product A</th>
+          <th>Product B</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-label="Features">Price</td>
+          <td data-label="Product A" class="price">$99</td>
+          <td data-label="Product B" class="price">$129</td>
+        </tr>
+        <tr>
+          <td data-label="Features">Rating</td>
+          <td data-label="Product A" >⭐ 4.5 / 5</td>
+          <td data-label="Product B">⭐ 4.2 / 5</td>
+        </tr>
+        <tr>
+          <td data-label="Features">Key Feature</td>
+          <td data-label="Product A" >Fast Performance</td>
+          <td data-label="Product B">Extra Storage</td>
+        </tr>
+        <tr>
+          <td data-label="Features">Action</td>
+          <td data-label="Product A"><button class="cta">Buy Now</button></td>
+          <td data-label="Product B"><button class="cta">Buy Now</button></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+<script src="app.js"></script>
+</html>

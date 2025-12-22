@@ -1,0 +1,146 @@
+
+    :root {
+      --bg: #f6f7fb;
+      --card: #ffffff;
+      --primary: #6366f1;
+      --secondary: #22c55e;
+      --text: #1f2937;
+      --muted: #6b7280;
+      --border: #e5e7eb;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: linear-gradient(180deg, #f8fafc, #eef2ff);
+      color: var(--text);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.2rem;
+      margin-bottom: 30px;
+      font-weight: 700;
+    }
+
+    .controls {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .controls button {
+      padding: 12px 22px;
+      border-radius: 999px;
+      border: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      cursor: pointer;
+      background: var(--primary);
+      color: #fff;
+      box-shadow: 0 10px 25px rgba(99,102,241,.25);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .controls button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 14px 35px rgba(99,102,241,.35);
+    }
+
+    .comparison {
+      max-width: 1100px;
+      margin: auto;
+      background: var(--card);
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 30px 60px rgba(0,0,0,.08);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 22px 18px;
+      text-align: center;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.95rem;
+    }
+
+    th {
+      background: #f1f5f9;
+      font-weight: 700;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: .04em;
+    }
+
+    td:first-child {
+      font-weight: 600;
+      color: var(--muted);
+    }
+
+    tr:hover td {
+      background: #f8fafc;
+    }
+
+    .price {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+
+    .highlight {
+      background: linear-gradient(180deg, #ecfdf5, #f0fdf4);
+    }
+
+
+    .cta {
+      padding: 12px 22px;
+      border-radius: 999px;
+      border: none;
+      background: var(--primary);
+      color: #fff;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background .2s ease, transform .2s ease;
+    }
+
+    .cta:hover {
+      background: #4f46e5;
+      transform: translateY(-1px);
+    }
+
+    @media (max-width: 768px) {
+      table, thead, tbody, th, td, tr {
+        display: block;
+      }
+
+      thead {
+        display: none;
+      }
+
+      tr {
+        margin-bottom: 16px;
+        border-bottom: 1px solid var(--border);
+      }
+
+      td {
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+      }
+
+      td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 18px;
+        font-weight: 600;
+        color: var(--muted);
+      }
+    }
