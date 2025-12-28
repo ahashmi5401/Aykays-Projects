@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+  background: #ffffff;
+  padding: 20px;
+}
+
+.container {
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #2c2c2c;
+  padding-bottom: 10px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 3px;
+}
+
+.title {
+  font-size: 12px;
+  color: #3a3a3a;
+  margin-bottom: 5px;
+}
+
+.contact-info {
+  font-size: 12px;
+  margin-bottom: 5px;
+  color: #3a3a3a;
+}
+
+main {
+  font-size: 12px;
+}
+
+section {
+  margin-bottom: 15px;
+}
+
+h2 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  border-bottom: 1px solid #4a4a4a;
+  padding-bottom: 3px;
+  color: #1a1a1a;
+}
+
+.job,
+.degree,
+.cert {
+  margin-bottom: 10px;
+}
+
+.job-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.job-title {
+  font-weight: bold;
+}
+
+.job-date {
+  font-weight: normal;
+  color: #3a3a3a;
+}
+
+.company {
+  font-style: italic;
+  margin-bottom: 3px;
+  color: #3a3a3a;
+}
+
+.job-desc {
+  margin-top: 3px;
+  line-height: 1.4;
+  color: #3a3a3a;
+}
+
+.degree-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2px;
+}
+
+.degree-name {
+  font-weight: bold;
+}
+
+.degree-school {
+  font-style: italic;
+  margin-bottom: 2px;
+  color: #3a3a3a;
+}
+
+.skills-list {
+  margin-bottom: 8px;
+  color: #3a3a3a;
+}
+
+.skill-category {
+  margin-bottom: 5px;
+}
+
+.skill-label {
+  font-weight: bold;
+  display: inline;
+  margin-right: 5px;
+}
+
+.summary {
+  margin-bottom: 8px;
+  color: #3a3a3a;
+  line-height: 1.4;
+}
+
+footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  border-top: 1px solid #4a4a4a;
+  font-size: 11px;
+  text-align: center;
+  color: #666666;
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+
+  h2 {
+    font-size: 12px;
+  }
+
+  main {
+    font-size: 11px;
+  }
+}
